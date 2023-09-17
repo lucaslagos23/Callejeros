@@ -12,6 +12,11 @@ $color6: #636AF6;
 $font1: "Lato", sans-serif;
 $font2: "Montserrat", sans-serif;
 $font3: "Poppins", sans-serif;
+body {
+    position: relative;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to left, #292935, #2b2b3b, #2e2e41, #303048, #33334e, #33334e, #33334e, #33334e, #303048, #2e2e41, #2b2b3b, #292935);
+}
 h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -30,11 +35,6 @@ h2 {
     padding-top: 30px;
     letter-spacing: 5px;
 }
-body {
-    position: relative;
-    padding-bottom: 200px;
-    background-image: linear-gradient(to left, #292935, #2b2b3b, #2e2e41, #303048, #33334e, #33334e, #33334e, #33334e, #303048, #2e2e41, #2b2b3b, #292935);
-}
 /* Inicio NAVBAR */
 header .navbar {
     background-color:  #292935;
@@ -42,7 +42,7 @@ header .navbar {
         margin-left: 50px !important;
     }
     .nav-link {
-        font-size: 20px !important;
+        font-size: 18px !important;
         text-transform: uppercase !important;
         margin-left: 5px !important;
         color: $color1 !important;
