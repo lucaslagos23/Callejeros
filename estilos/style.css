@@ -1,0 +1,606 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 30px;
+  letter-spacing: 5px;
+}
+
+body {
+  position: relative;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to left, #292935, #2b2b3b, #2e2e41, #303048, #33334e, #33334e, #33334e, #33334e, #303048, #2e2e41, #2b2b3b, #292935);
+}
+
+/* Inicio NAVBAR */
+header .navbar {
+  background-color: #292935;
+}
+header .navbar .container-fluid {
+  margin-left: 50px !important;
+}
+header .navbar .nav-link {
+  font-size: 20px !important;
+  text-transform: uppercase !important;
+  margin-left: 5px !important;
+  color: #ebe5dd !important;
+}
+header .navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Fin Navbar */
+/* Inicio carrusel */
+.d-block {
+  width: 100% !important;
+  height: 600px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .d-block {
+    width: 100% !important;
+    height: 300px !important;
+  }
+}
+/* Fin carrusel */
+/* Inicio Section spotify */
+.container-spotify {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-spotify .spotify-items {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.container-spotify .temas {
+  width: 350px;
+  height: 250px;
+  margin: 15px;
+}
+
+/* Fin Section spotify */
+/* Inicio HISTORIA*/
+.historia-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+  padding: 20px;
+}
+
+.historia-contenedor2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+  padding: 20px;
+  flex-direction: row-reverse;
+}
+
+.text-historia {
+  background-color: #3E3E4F;
+  color: #ffffff;
+  line-height: 1.5;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-size: "Montserrat", sans-serif;
+  box-shadow: -2px 2px #515166;
+}
+
+.image-historia {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 380px;
+  height: 380px;
+  border-radius: 5px;
+  filter: brightness(1.2);
+  transform: rotate(-3deg);
+}
+
+@media (max-width: 480px) {
+  .text-historia {
+    width: 90%;
+  }
+  .image-historia {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 1200px) {
+  .historia-contenedor,
+  .historia-contenedor2 {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  .historia-contenedor,
+  .historia-contenedor2 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Fin HISTORIA */
+/* Inico GALERIA*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(15, 400px);
+  grid-column-gap: 25px;
+  grid-row-gap: 20px;
+  padding: 45px;
+}
+.galeria .item {
+  background-size: cover;
+  background-position: top;
+  transition: all 0.9s;
+  text-align: center;
+}
+.galeria .item:hover {
+  transform: scale(1.08);
+}
+
+@media only screen and (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 400px);
+  }
+  .galeria .item1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .galeria .item6 {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+  .galeria .item9 {
+    grid-column: 1/2;
+    grid-row: 5/7;
+  }
+  .galeria .item11 {
+    grid-column: 1/2;
+    grid-row: 9/11;
+  }
+  .galeria .item12 {
+    grid-column: 2/3;
+    grid-row: 6/8;
+  }
+  .galeria .item14 {
+    grid-column: 2/3;
+    grid-row: 10/12;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 400px);
+  }
+  .galeria .item1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .galeria .item6 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .galeria .item9 {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  .galeria .item10 {
+    grid-column: 4/5;
+    grid-row: 3/5;
+  }
+  .galeria .item11 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .galeria .item12 {
+    grid-column: 3/4;
+    grid-row: 4/6;
+  }
+  .galeria .item14 {
+    grid-column: 4/5;
+    grid-row: 5/6;
+  }
+}
+.item1 {
+  background-image: url(../imagenes/1.jpeg);
+}
+
+.item2 {
+  background-image: url(../imagenes/2.JPG);
+}
+
+.item3 {
+  background-image: url(../imagenes/3.jpg);
+}
+
+.item4 {
+  background-image: url(../imagenes/4.jpeg);
+}
+
+.item5 {
+  background-image: url(../imagenes/5.jpeg);
+}
+
+.item6 {
+  background-image: url(../imagenes/6.jpg);
+}
+
+.item7 {
+  background-image: url(../imagenes/7.jpeg);
+}
+
+.item8 {
+  background-image: url(../imagenes/8.jpeg);
+}
+
+.item9 {
+  background-image: url(../imagenes/9.jpg);
+}
+
+.item10 {
+  background-image: url(../imagenes/10.jpeg);
+}
+
+.item11 {
+  background-image: url(../imagenes/11.jpeg);
+}
+
+.item12 {
+  background-image: url(../imagenes/12.jpg);
+}
+
+.item13 {
+  background-image: url(../imagenes/13.jpeg);
+}
+
+.item14 {
+  background-image: url(../imagenes/14.jpeg);
+}
+
+.item15 {
+  background-image: url(../imagenes/15.jpg);
+}
+
+/* Fin GALERIA*/
+/* Inicio DISCOGRAFIA */
+.card-header {
+  height: 200px;
+}
+.card-header img {
+  width: 320px;
+  height: 320px;
+  display: block;
+  padding: 20px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #3E3E4F;
+  box-shadow: 0px 0px 5px #515166;
+  margin: 10px;
+  transition: filter ease;
+}
+.card:hover {
+  transform: scale(1.02);
+  filter: none;
+}
+
+.card-body {
+  padding: 15px 20px;
+  margin-top: 130px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-body .card-title {
+  text-align: center;
+  padding-top: 2px;
+}
+.card-body .card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-grow: 1;
+  color: #ffffff;
+}
+
+.btn-album {
+  display: flex;
+  background-color: #636AF6;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0px;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.9s;
+}
+.btn-album:hover {
+  transform: scale(1.08);
+  color: #ebe5dd;
+}
+
+@media (min-width: 480px) {
+  .album-contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .album-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .album-contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .card:last-child {
+    grid-column: 2/span 1;
+  }
+}
+/* Fin DISCOGRAFIA*/
+/* Inicio FORMULARIO*/
+@media (min-width: 480px) {
+  .container {
+    padding: 0 15%;
+  }
+  .container .submit {
+    text-align: center;
+  }
+  .container .form-label {
+    font-size: 20px !important;
+  }
+  .mapa {
+    display: block;
+    width: 350px;
+    height: 300px;
+    border: none;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    padding: 45px;
+  }
+  .container .submit {
+    text-align: center;
+  }
+  .container .mapa {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+  }
+}
+.form-label {
+  font-size: 15px !important;
+  color: #ffffff;
+}
+
+.btn-contact {
+  background-color: #636AF6;
+  color: #ffffff;
+  font-size: 20px;
+  border-color: transparent;
+  padding: 5px;
+  width: 150px;
+  border-radius: 8px;
+  transition: filter 0.9s ease;
+}
+.btn-contact:hover {
+  transform: scale(1.08);
+}
+
+.privacidad {
+  padding-top: 15px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* Fin FORMULARIO */
+/* Inicio FOOTER */
+footer {
+  position: absolute;
+  background-color: #292935;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+footer p {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+footer a {
+  color: #D0D3D6;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 40px;
+}
+
+.instagram:hover {
+  background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.github:hover {
+  color: #171515;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.spotify:hover {
+  color: #1DB954;
+}
+
+/* Fin Footer */
+/* Inicio Política de Privacidad */
+.politicasdeprivacidad {
+  box-shadow: 0px 0px 5px #3E3E4F;
+  margin: 100px auto;
+  width: 800px;
+  padding: 20px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 100%;
+  background-color: #3E3E4F;
+}
+.politicasdeprivacidad p {
+  padding: 15px;
+}
+.politicasdeprivacidad strong {
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .politicasdeprivacidad {
+    width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .politicasdeprivacidad {
+    width: 400px;
+  }
+}
+.subir {
+  margin-left: 90%;
+  font-size: 40px;
+}
+
+/* Fin Política de Privacidad */
+/* Inicio Cartas giratorias */
+.flip-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  row-gap: 20px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-front img {
+  width: 400px !important;
+  height: 400px !important;
+}
+
+.flip-card-back {
+  background-color: #3E3E4F;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back p {
+  margin: 20px;
+}
+
+.flip-card:nth-child(5) {
+  grid-column: 2;
+}
+
+.flip-card:nth-child(6) {
+  grid-column: 3;
+}
+
+@media (max-width: 1200px) {
+  .flip-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 350px);
+  }
+  .flip-card {
+    width: 350px;
+    height: 350px;
+  }
+  .flip-card-front img {
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
+@media (max-width: 768px) {
+  .flip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flip-card {
+    width: 350px;
+    height: 350px;
+  }
+}
+/* Inicio Cartas giratorias *//*# sourceMappingURL=style.css.map */
