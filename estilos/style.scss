@@ -53,6 +53,14 @@ header .navbar {
 }
 /* Fin Navbar */
 /* Inicio carrusel */
+.centrados {
+    color: $color1;
+    text-align: center;
+    font-size: 17px;
+    margin: 20px 30px 20px 30px;
+    font-family: $font2;
+    padding-bottom:15px ;
+}
 .d-block {
     width: 100% !important;
     height: 600px !important;

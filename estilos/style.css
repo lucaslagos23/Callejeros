@@ -50,6 +50,15 @@ header .navbar .nav-link:hover {
 
 /* Fin Navbar */
 /* Inicio carrusel */
+.centrados {
+  color: #ebe5dd;
+  text-align: center;
+  font-size: 17px;
+  margin: 20px 30px 20px 30px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 15px;
+}
+
 .d-block {
   width: 100% !important;
   height: 600px !important;
